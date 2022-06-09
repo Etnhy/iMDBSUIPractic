@@ -10,15 +10,11 @@ import SwiftUI
 struct ContentViewSearch: View {
     @ObservedObject var moviesModel = MoviewSearchViewModel()
     var body: some View {
-        NavigationView {
             VStack {
                 SearchView(searchTerm:$moviesModel.name)
                 
                 MoviesList(movies: moviesModel.movies)
             }
-            .navigationTitle("Movies")
-        }
-        
     }
 }
 

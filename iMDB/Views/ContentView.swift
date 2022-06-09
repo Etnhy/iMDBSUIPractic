@@ -16,10 +16,10 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Picker("", selection: $moviesViewModel.indexEndpoint) {
-                    Text("nowPlaying").tag(0)
-                    Text("popular").tag(1)
-                    Text("upcoming").tag(2)
-                    Text("topRated").tag(3)
+                    Text("Playing Now").tag(0)
+                    Text("Popular").tag(1)
+                    Text("Upcoming").tag(2)
+                    Text("Top Rated").tag(3)
                 }
                 .pickerStyle(.segmented)
                 MoviesList(movies: moviesViewModel.movies)

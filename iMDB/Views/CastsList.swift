@@ -21,7 +21,6 @@ struct CastsList: View {
                         
                         Text("\(cast.character)").font(.footnote)
                         Text("\(cast.name)")
-
                     }
                 }
             } //hstack

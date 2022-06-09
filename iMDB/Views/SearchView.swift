@@ -12,14 +12,11 @@ struct SearchView: View {
     @Binding var searchTerm: String
     var body: some View {
         HStack {
-            Spacer()
             Image(systemName: "magnifyingglass")
-            
+                .padding(.leading, 20)
             TextField("Search",text: self.$searchTerm)
                 .font(.largeTitle)
                 .foregroundColor(.primary)
-                .padding(10)
-            
         }
     }
 }
