@@ -14,7 +14,7 @@ enum Endpoint {
     case search (searchString: String)
     case credits (movieId: Int)
     
-    var baseURL:URL {URL(string: "https://api.themoviedb.org/3")!}
+    var baseURL:URL {URL(string: Bundle.main.object(forInfoDictionaryKey: "tmdb_api") as! String)!}
     
     func path() -> String {
         switch self {
@@ -70,7 +70,8 @@ enum Endpoint {
 
 struct APIConstants {
     /// TMDB API key url: https://themoviedb.org
-    static let apiKey: String = "2e7cf1a16bc88e75c35c5da677150af4"
+    static let apiKey: String = Bundle.main.object(forInfoDictionaryKey: "tmdb_key") as! String
+
     
     static let jsonDecoder: JSONDecoder = {
         let jsonDecoder = JSONDecoder()

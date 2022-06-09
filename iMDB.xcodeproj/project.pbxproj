@@ -39,6 +39,7 @@
 		60C5A4A7285140EA0006160C /* MoviewSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewSearchViewModel.swift; sourceTree = "<group>"; };
 		60CD126F2852774E00A5452E /* ContentViewSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewSearch.swift; sourceTree = "<group>"; };
 		60CD12712852778800A5452E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		60CD12732852800B00A5452E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		60DDC56628507B0E0023E6C8 /* iMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DDC56928507B0E0023E6C8 /* iMDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMDBApp.swift; sourceTree = "<group>"; };
 		60DDC56B28507B0E0023E6C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +111,7 @@
 		60DDC56828507B0E0023E6C8 /* iMDB */ = {
 			isa = PBXGroup;
 			children = (
+				60CD12732852800B00A5452E /* Info.plist */,
 				60C5A49C2851379E0006160C /* Styles */,
 				60DDC56928507B0E0023E6C8 /* iMDBApp.swift */,
 				60C5A4942851320B0006160C /* Views */,
@@ -366,6 +368,7 @@
 				DEVELOPMENT_TEAM = 876GZYDWFS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iMDB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -381,6 +384,8 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TMDB_API = "https://api.themoviedb.org/3";
+				TMDB_KEY = 2e7cf1a16bc88e75c35c5da677150af4;
 			};
 			name = Debug;
 		};
@@ -395,6 +400,7 @@
 				DEVELOPMENT_TEAM = 876GZYDWFS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iMDB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -410,6 +416,8 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TMDB_API = "https://api.themoviedb.org/3";
+				TMDB_KEY = 2e7cf1a16bc88e75c35c5da677150af4;
 			};
 			name = Release;
 		};
