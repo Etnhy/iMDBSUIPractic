@@ -24,9 +24,20 @@ struct ContentView: View {
                 .pickerStyle(.segmented)
                 MoviesList(movies: moviesViewModel.movies)
             }
+            .toolbar(content: {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink("Search") {
+                        ContentViewSearch()
+                    }
+                }
+            })
             .navigationBarTitle("Movies")
         }
     }   // Body
+    
+    var searchButton = {
+
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
